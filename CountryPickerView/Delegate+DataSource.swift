@@ -21,6 +21,8 @@ public protocol CountryPickerViewDelegate: class {
     /// If the CountryPickerViewController is presented(not pushed), it is embedded in a UINavigationController.
     /// The CountryPickerViewController is a UITableViewController subclass.
     func countryPickerView(_ countryPickerView: CountryPickerView, didShow viewController: CountryPickerViewController)
+    
+    func countryPickerViewTapped(_ countryPickerView: CountryPickerView)
 }
 
 public protocol CountryPickerViewDataSource: class {
